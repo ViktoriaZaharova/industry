@@ -138,6 +138,18 @@ jQuery(document).ready(function () {
         a.css("width", 100 / b + "%");
     });
 
+    if (window_width < 992) {
+        $(".main-styles__list .main-styles__item").each(function(){
+            $(this).click(function(e){
+                if(!$(this).hasClass('active')){
+                    e.preventDefault();
+                }
+                $(".main-styles__list .main-styles__item").removeClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    }
+
 //BREADCRUMBS MOBILE
     $('.breadcrumbs-mob').html($('.breadcrumbs-desc').html());
 
