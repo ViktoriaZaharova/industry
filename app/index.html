@@ -19,13 +19,6 @@
 
 <body>
 
-<!-- BEGIN HEADER-->
-<!--
-<header>
-
-</header>
--->
-<!-- END HEADER-->
 
 <!-- BEGIN LEFT SB-->
 <div id="leftSB" class="header__main">
@@ -37,17 +30,25 @@
 
         <!-- BEGIN MAIN MENU -->
         <div class="mainMenu">
-            <nav class="navbar navbar-expand-lg">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false">
-                            <span class="sandwich">
-                                <span class="icon-bar sw-topper"></span>
-                                <span class="icon-bar sw-bottom"></span>
-                                <span class="icon-bar sw-footer"></span>
-                            </span>
-                </button>
+            <nav class="navbar navbar-expand-xl">
                 <div class="collapse navbar-collapse" id="navbar">
-                    <div class="langWrap langWrap-mob"></div>
+                    <div class="search-mobile">
+                        <form action="#" method="post">
+                            <div class="searchForm__wrap">
+                                <input class="search__input" type="text" name="search" placeholder="Поиск по артикулу" value="">
+                                <button type="submit"><img src="img/search-icon.png" alt=""></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="langWrap langWrap-mob">
+                        <select class="select-lang" name="language">
+                            <option value="Ru">Ru</option>
+                            <option value="En">En</option>
+                        </select>
+                    </div>
+
+
                     <ul class="navbar-nav">
                         <li class="active1">
                             <a href="#1">
@@ -87,9 +88,9 @@
                     </ul>
                     <div class="header__soc header__soc-mobMenu">
                         <div class="header__socItem">
-                            <a href="#searchForm" title="" class="slice header__socItem-search">
+                            <a href="#" title="" class="slice header__socItem-search">
                                 <!-- <i class="far fa-search"></i> -->
-                                <i class="fas fa-search"></i>
+                                <i class="fas fa-star"></i>
                             </a>
                         </div>
                         <div class="header__socItem">
@@ -127,7 +128,7 @@
         </div>
 
 
-        <div class="searchForm svgForm" id="searchForm">
+        <div class="searchForm svgForm">
             <form action="#" method="post">
                 <div class="searchForm__wrap">
                     <input class="search__input" type="text" name="search" placeholder="Поиск по артикулу" value="">
@@ -136,6 +137,15 @@
             </form>
         </div>
         <div class="btn-form__search"><img src="img/search-icon.png" alt=""></div>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false">
+                            <span class="sandwich">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+        </button>
     </div>
 </div>
 <!-- END LEFT SB-->
@@ -143,7 +153,6 @@
 <!-- BEGIN SLIDER MAIN-->
 <section id="slider__main">
     <div class="slider__header-mainWrap">
-
         <!-- BEGIN SLIDER CAROUSEL-->
         <div class="sliderMainWrap slider slider__header-main">
             <div class="sliderBigWrap">
@@ -166,7 +175,6 @@
             </div>
         </div>
         <!-- END SLIDER CAROUSEL-->
-
 
         <div class="slider__main-content container">
             <div class="slider__main-info">
@@ -200,37 +208,47 @@
                 </div>
             </div>
 
-            <!-- BEGIN BANNERS MAIN-->
-            <section id="banners">
-                <div class="banners-main">
-                    <div class="banners-main__item">
-                        <a href="#" title="" target="_blank" rel="nofollow">
-                            <img class="lazy" data-src="img/logo1.png" alt="">
-                        </a>
-                    </div>
-                    <div class="banners-main__item">
-                        <a href="#" title="" target="_blank" rel="nofollow">
-                            <img class="lazy" data-src="img/logo2.png" alt="">
-                        </a>
-                    </div>
-                    <div class="banners-main__item">
-                        <a href="#" title="" target="_blank" rel="nofollow">
-                            <img class="lazy" data-src="img/logo3.png" alt="">
-                        </a>
-                    </div>
-                    <div class="banners-main__item">
-                        <a href="#" title="" target="_blank" rel="nofollow">
-                            <img class="lazy" data-src="img/logo4.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <!-- END BANNERS MAIN-->
 
         </div>
+
     </div>
+
+
+    <!-- BEGIN BANNERS MAIN-->
+    <section id="banners">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="banners-main">
+                        <div class="banners-main__item">
+                            <a href="#" title="" target="_blank" rel="nofollow">
+                                <img class="lazy" data-src="img/logo1.png" alt="">
+                            </a>
+                        </div>
+                        <div class="banners-main__item">
+                            <a href="#" title="" target="_blank" rel="nofollow">
+                                <img class="lazy" data-src="img/logo2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="banners-main__item">
+                            <a href="#" title="" target="_blank" rel="nofollow">
+                                <img class="lazy" data-src="img/logo3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="banners-main__item">
+                            <a href="#" title="" target="_blank" rel="nofollow">
+                                <img class="lazy" data-src="img/logo4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END BANNERS MAIN-->
 </section>
 <!-- END SLIDER MAIN-->
+
 
 <!--section collection-->
 <section class="collection-vernissage">
@@ -297,6 +315,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-12 d-flex d-xl-none">
+                <a href="#" class="links">
+                    Перейти в каталог
+                    <i class="fa fas fa-caret-right slick-next" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
 
@@ -393,7 +418,7 @@
 <section class="about">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-xl-6">
                 <div class="category__title">О компании</div>
 
                 <div class="description-company">
@@ -409,7 +434,7 @@
                             тиснения</strong>.</p>
                 </div>
 
-                <div class="about-advantages">
+                <div class="about-advantages d-none d-xl-flex">
                     <div class="about-advantages__box">
                         <div class="icon"><img src="img/chat-1.png" alt=""></div>
                         <div class="text">
@@ -467,7 +492,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 about-photo">
+            <div class="col-12 col-xl-6 about-photo">
                 <div class="about-slider">
                     <img src="img/about1.jpg" alt="">
                     <img src="img/about1.jpg" alt="">
@@ -484,6 +509,65 @@
                     <div class="counter-slide">
                         <div class="cp">01</div>
                         <div class="default">/05</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 d-flex d-xl-none">
+                <div class="about-advantages">
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/chat-1.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/piggy-bank.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/photo-camera.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/next.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/shopping-cart.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-advantages__box">
+                        <div class="icon"><img src="img/placeholder.png" alt=""></div>
+                        <div class="text">
+                            <p>Более <strong>3 000
+                                вариантов</strong> дизайна
+                                в каталоге
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -547,7 +631,7 @@
                         187</p>
                 </div>
                 <div class="copyright__phone col-12 col-md-3 col-xl-2">
-                    <p><a href="+74722400540" title="">+7 (4722) 400-540</a></p>
+                    <p><a href="tel:+74722400540" title="">+7 (4722) 400-540</a></p>
                 </div>
                 <div class="copyright__mail col-12 col-md-3 col-xl-2">
                     <p><a href="mailto:office@industry-wp.ru">office@industry-wp.ru</a></p>

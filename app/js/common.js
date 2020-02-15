@@ -364,8 +364,8 @@ jQuery(document).ready(function () {
 
 // slider collection
 $('.vernissage__slider').slick({
-    appendArrows: $(this).find('.vernissage__slider-nav'),
-    appendDots: $(this).find('.vernissage__slider-dots'),
+    appendArrows: $('.vernissage__slider-nav'),
+    appendDots: $('.vernissage__slider-dots'),
     prevArrow: '<div class="slick-arrow-left slick-arrow"><i class="fa fas fa-caret-left slick-prev" aria-hidden="true"></i></div>',
     nextArrow: '<div class="slick-arrow-right slick-arrow"><i class="fa fas fa-caret-right slick-next" aria-hidden="true"></i></div>',
     arrows: true,
@@ -377,6 +377,16 @@ $('.vernissage__slider').slick({
     rows: 1,
     autoplay: false,
     autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                vertical: true,
+                slidesToShow: 3,
+                infinite: true,
+            }
+        }
+    ]
 });
 
 // about slider
