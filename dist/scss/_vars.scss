@@ -1,0 +1,23 @@
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1170px);
+
+$gutter: $grid-gutter-width;
+
+$default-font: "PT Sans Regular", sans-serif;
+
+$text-color: #FFF;
+$color-red: #e30613;
+$input-color: #FFF;
+$button-color: #FFF;
+$thead-color: #FFF;
+
+$bg: #4d4d4c; 
+$input-bg: #4d4d4c; 
+$button-bg: #e30613;
+$thead-bg: #282828;
+$tr-2n-bg: #e8e8e8;
+$tr-hover-bg: rgba(238,246,238,1);
+

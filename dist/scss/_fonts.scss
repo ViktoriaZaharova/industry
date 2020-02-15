@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("PT Sans Regular", "../fonts/PTSansRegular/PTSansRegular", 400);
+@include font-face("PT Sans Italic", "../fonts/PTSansItalic/PTSansItalic", 400);
+@include font-face("PT Sans Bold", "../fonts/PTSansBold/PTSansBold", 700);
+@include font-face("Century Gothic Regular", "../fonts/CenturyGothicRegular/CenturyGothicRegular", 400);
+@include font-face("Century Gothic Bold", "../fonts/CenturyGothicBold/CenturyGothicBold", 700);
